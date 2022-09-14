@@ -1,0 +1,328 @@
+body {
+  font-family: "Alata", sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* PARALLAX CONFIG */
+.wrapper1 {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
+.image1::after {
+  background-image: url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+  width: 100vw;
+}
+
+.parallax::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-attachment: fixed;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateZ(-1px) scale(1);
+}
+
+.static {
+  background: rgb(59, 66, 71);
+}
+/* Navbar ++++++++++++++++++++++++++++++++++++++++++++*/
+
+.navbar {
+  background: rgb(59, 66, 71);
+}
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+.nav-link:hover {
+  color: gray;
+}
+.toggler,
+.toggler:focus {
+  margin-left: auto;
+  border: none;
+  box-shadow: none;
+}
+.toggler:hover {
+  color: grey;
+}
+.fa-hamburger {
+  color: rgb(255, 255, 255);
+  text-shadow: 0.05rem 0.05rem 0.5rem rgb(0, 0, 0);
+}
+
+/* INTRO____________________________________________ */
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 10rem;
+  font-weight: 900;
+}
+
+.hello {
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+/* MY WORK */
+#projects {
+  justify-content: space-between;
+}
+
+.wrapper {
+  position: relative;
+}
+
+#work {
+  margin-top: 40px;
+}
+
+.allIcons {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.allIcons:hover .icons {
+  margin: 15px;
+  transition: 0.4s;
+}
+
+.icons {
+  margin: 5px;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+.icons:hover {
+  font-size: 2.5rem;
+  transition: 0.1s;
+}
+
+.fa-html5:hover {
+  color: #ff6207;
+}
+.fa-css3:hover {
+  color: rgb(4, 121, 230);
+}
+.fa-js-square:hover {
+  color: rgb(255, 230, 0);
+}
+.fa-react:hover {
+  color: rgb(0, 132, 255);
+}
+.fa-bootstrap:hover {
+  color: rgb(117, 59, 235);
+}
+.fa-npm:hover {
+  color: rgba(255, 68, 0, 0.788);
+}
+.fa-node:hover {
+  color: rgba(60, 187, 35, 0.788);
+}
+.fa-python:hover {
+  color: rgba(255, 230, 0, 0.925);
+}
+.fa-github:hover {
+  color: rgb(255, 255, 255);
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
+image:hover {
+  box-shadow: inset 0rem 0rem 5rem rgb(0, 0, 0);
+}
+
+.card:hover {
+  box-shadow: inset 0rem 0rem 5rem rgb(0, 0, 0);
+}
+
+.card-body:hover {
+  color: white;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.footer {
+  height: 30px;
+}
+
+.picture {
+  background-image: url(balloons.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  width: 450px;
+  height: 40vh;
+  transition: 0.2s;
+  margin: 20px;
+}
+
+.picture:nth-of-type(2) {
+  background-image: url(campbook.png);
+}
+.picture:nth-of-type(3) {
+  background-image: url(colorGamePic.png);
+}
+
+.allPics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  display: none;
+  width: 100%;
+}
+
+.picture:hover .buttons {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: fit-content;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.picture:hover {
+  box-shadow: inset 0rem 0rem 10em rgb(0, 0, 0);
+  transition-timing-function: ease-in-out;
+  transition: 0.2s;
+}
+
+.buttons-bg {
+  background-color: rgb(102, 116, 125);
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.buttons-bg:hover {
+  background-color: rgb(71, 80, 86);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.my-name {
+  cursor: default;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.paragraph {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.divider {
+  position: relative;
+  width: 80%;
+  height: 2px;
+  background: rgb(144, 161, 172);
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .picture {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .allPics {
+    flex-direction: column;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 7em;
+  }
+
+  .icons {
+    font-size: 2em;
+  }
+
+  .allIcons:hover .icons {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .allPics {
+    flex-direction: column;
+  }
+
+  .picture {
+    width: 450px;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .picture {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .paragraph {
+    width: 100%;
+  }
+}
+
+.contact-buttons {
+  width: 60%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
