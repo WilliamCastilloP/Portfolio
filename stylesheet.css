@@ -272,6 +272,13 @@ image:hover {
   margin: 20px 0;
 }
 
+.contact-buttons {
+  width: 60%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 700px) {
   .picture {
     width: 80%;
@@ -310,7 +317,7 @@ image:hover {
   }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 415px) {
   .picture {
     width: 100%;
     margin: 20px 0;
@@ -319,11 +326,19 @@ image:hover {
   .paragraph {
     width: 100%;
   }
-}
 
-.contact-buttons {
-  width: 60%;
-  display: flex;
-  margin-top: 50px;
-  justify-content: space-evenly;
+  h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  .paragraph-text {
+    width: 100%;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
 }
