@@ -31,6 +31,7 @@ body {
 }
 .nav-link {
   color: rgb(255, 255, 255);
+  margin: 0 20px;
 }
 .nav-link:hover {
   color: gray;
@@ -233,6 +234,7 @@ image:hover {
 }
 
 .section {
+  width: 100%;
   position: relative;
   min-height: 100vh;
   flex-direction: column;
@@ -244,7 +246,7 @@ image:hover {
 }
 
 .paragraph {
-  width: 60%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -311,7 +313,8 @@ image:hover {
   }
 
   .paragraph {
-    width: 100%;
+    width: 90%;
+    padding: 0;
   }
 
   h1 {
