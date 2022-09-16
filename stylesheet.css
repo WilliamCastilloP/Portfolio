@@ -13,25 +13,12 @@ body {
   perspective: 1px;
 }
 
-.image1::after {
+.image1 {
   background-image: url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
-  width: 100vw;
-}
-
-.parallax::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-attachment: fixed;
-  z-index: -1;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  transform: translateZ(-1px) scale(1);
+  width: 100vw;
 }
 
 .static {
